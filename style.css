@@ -1,0 +1,31 @@
+/* Apply styles to the whole h1 */
+h1 {
+  font-family: 'Arial', sans-serif; /* Simple, minimal font */
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  color: #333; /* Dark gray text for the rest */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the changing word */
+#changing-word {
+  display: inline-block;
+  font-family: inherit; /* Inherit the same font as the h1 */
+  font-size: inherit; /* Use the same font size as the h1 */
+  font-weight: bold; /* Make the changing word bold */
+  background-image: linear-gradient(45deg, #ff6a00, #ff6347); /* 2-color gradient */
+  -webkit-background-clip: text; /* Make the gradient visible on text */
+  color: transparent; /* Make text transparent so the gradient shows */
+  transition: opacity 0.3s ease-in-out, background-image 0.5s ease-in-out; /* Smooth fade and color transition */
+}
+
+/* Static words color */
+span {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #007bff; /* Light blue for static words */
+}
