@@ -10,7 +10,9 @@ h1 {
   padding: 0;
  font-size: 60px;
  font-weight: 300;
-  
+ word-wrap: break-word; /* Prevent long text from being cut */
+ margin: 0 auto;
+ max-width: 100%; /* Ensure text does not overflow the screen */
 }
 
 /* Style for the changing word */
@@ -30,7 +32,7 @@ span {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  color: #007bff; /* Light blue for static words */
+
 }
 body {
     font-family: Arial, sans-serif;
@@ -41,13 +43,7 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    word-wrap: break-word; /* Prevent long text from being cut */
-    margin: 0 auto;
-    max-width: 80%; /* Ensure text does not overflow the screen */
-}
+
 
 #changing-word {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
