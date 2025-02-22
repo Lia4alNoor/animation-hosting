@@ -1,7 +1,6 @@
 /* Apply styles to the whole h1 */
 h1 {
   font-family: 'Arial', sans-serif; /* Simple, minimal font */
-  font-size: 36px;
   font-weight: normal;
   text-align: center;
   color: #333; /* Dark gray text for the rest */
@@ -9,6 +8,9 @@ h1 {
   padding-top:10px;
   margin: 0;
   padding: 0;
+ font-size: 60px;
+ font-weight: 300;
+  
 }
 
 /* Style for the changing word */
@@ -34,7 +36,6 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background: #f5f5f5;
     color: #333;
     overflow: hidden; /* Ensure the page does not overflow */
     margin: 0;
