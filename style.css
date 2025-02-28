@@ -12,6 +12,21 @@ h1 {
   transition: 1.5s ease-in-out;
 }
 
+@media (max-width: 850px) {
+  
+h1 {
+ 
+  text-align: left;
+  
+  line-height: 1;
+  margin: 0;
+  
+  font-size: 20px; /* Large font size for emphasis */
+
+}
+ 
+}
+
 /* Style for the changing word */
 #changing-word {
   display: inline-block;
