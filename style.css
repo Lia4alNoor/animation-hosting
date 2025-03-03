@@ -1,4 +1,11 @@
 /* Apply styles to the whole h1 */
+html, body {
+  overflow: hidden; /* Disables both vertical and horizontal scrolling */
+  height: 100%; /* Ensures the body takes up the full viewport */
+}
+
+
+
 h1 {
   font-family: 'Arial', sans-serif; /* Simple, minimal font */
   font-weight: 700; /* Bold text for the heading */
