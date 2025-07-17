@@ -1,27 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lottie Animation</title>
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-    <style>
-      body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #ffffff;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What We Offer</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #2d3748;
+      padding: 60px 20px;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .offers-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .offers-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      margin-bottom: 60px;
+      letter-spacing: -0.02em;
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      align-items: center;
+    }
+
+    .offer-card {
+      text-align: center;
+      padding: 40px 24px;
+      border-radius: 24px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .offer-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .offer-lottie, lottie-player {
+      display: block;
+      margin: 0 auto 24px;
+      height: 120px;
+      width: auto;
+    }
+
+    .offer-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .offer-description {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .animated-bg {
+      position: absolute;
+      top: -200px;
+      left: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle at 30% 30%, #805ad5, transparent 70%);
+      filter: blur(120px);
+      z-index: -1;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100 {
+        transform: translateY(0) translateX(0);
       }
-    </style>
-  </head>
-  <body>
-    <dotlottie-wc
-      src="https://lottie.host/f1707159-79a8-4247-ad63-c324bba2a527/Vze7g7MuhW.lottie"
-      style="width: 300px; height: 300px;"
-      speed="1"
-      autoplay
-      loop>
-    </dotlottie-wc>
-  </body>
+      50% {
+        transform: translateY(30px) translateX(20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .offers-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+      }
+
+      .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .offer-card {
+        padding: 32px 24px;
+        min-height: 240px;
+      }
+
+      .offer-title {
+        font-size: 24px;
+      }
+
+      .offer-description {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offers-container">
+    <div class="animated-bg"></div>
+    <h2 class="offers-title">What we offer</h2>
+    <div class="offers-grid">
+      <a href="https://www.thinkabled.com/book-notes/" class="offer-card" target="_blank">
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_0yfsb3a1.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <h3 class="offer-title">Book Notes</h3>
+        <p class="offer-description">
+          Access In-Depth Book Summaries of non fiction best sellers.
+        </p>
+      </a>
+
+      <a href="https://www.thinkabled.com/articles/" class="offer-card" target="_blank">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_4kx2q32n.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <h3 class="offer-title">Articles</h3>
+        <p class="offer-description">
+          Articles on Habits, Productivity, Learning, Thinking and more.
+        </p>
+      </a>
+
+      <a href="https://www.thinkabled.com/infographics" class="offer-card" target="_blank">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_x62chJ.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <h3 class="offer-title">Infographics</h3>
+        <p class="offer-description">
+          Visual learning made powerful through data-driven design.
+        </p>
+      </a>
+    </div>
+  </div>
+</body>
 </html>
