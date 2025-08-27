@@ -13,7 +13,7 @@ h1 {
   color: #333; /* Dark gray text for static words */
   line-height: 1.5;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 1%;
   font-size: 50px; /* Large font size for emphasis */
   word-wrap: break-word; /* Prevent long text from being cut */
   transition: 1.5s ease-in-out;
