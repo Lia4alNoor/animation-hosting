@@ -14,6 +14,7 @@ h1 {
   line-height: 1.5;
   margin: 0;
   padding-top: 1%;
+  padding-left:3%;
   font-size: 50px; /* Large font size for emphasis */
   word-wrap: break-word; /* Prevent long text from being cut */
   transition: 1.5s ease-in-out;
